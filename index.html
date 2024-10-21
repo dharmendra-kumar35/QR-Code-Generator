@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	  <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="style.css">
-	  <title>QR Code Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="shortcut icon" href="asset/favicon/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<h1>QR CODE GENERATOR</h1>
-	<div class="main">
-		<input type="text" name="" id="" class="input" placeholder="Enter text here...">
-		<button class="btn">Generate</button> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdnbx19IIBKvSAwARaGMfbl06_CnXNcV63g&usqp=CAU" alt="qrcode" class="code">
-		<p id="note">Design and developed by</p>
-    <a herf="https://github.com/dharmendra-kumar35">Dharmendra kumar</a>
-	</div>
-	<div id="toast">Wow you Generated!!!</div>
-	<script src="script.js"></script>
-</body>
+    <header class="header">
+    <nav class="navbar">
+        <h1>QR Code Generator</h1>
+    </nav>
+</header>
 
- <!---- Footer ---->
- <footer id="footer">
-
-   
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Dharmendra</span></strong>. All Rights Reserved
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <p>Enter your text or URL</p>
+        <input type="text" placeholder="Text or URL" id="qrText">
+        <div id="imgBox">
+            <img src="" id="qrImage" alt="QR Code">
         </div>
-        <div class="credits">
-         
-          Designed by <a href="https://github.com/dharmendra-kumar35">echodharmendra</a>
-        </div>
-      </div>
+        <button onclick="generateQR()">Generate QR Code</button>
+        <button id="downloadButton" onclick="downloadQR()">Download QR Code</button>
+    
     </div>
-  </footer>
 
+    <div class="last-text">
+        <p>Developed By @Raunak Raj</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
-
